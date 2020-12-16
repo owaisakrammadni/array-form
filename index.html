@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <form action="#" onsubmit="armyform()">
+            <h2>ARMY FORM</h2>
+            <select name="countries" id="country">
+                <option value="pakistan">pakistan</option>
+                <option value="india">india</option>
+                <option value="afghanistan">afghanistan</option>
+                <option value="china">china</option>
+                <option value="bangladesh">bangladesh</option>
+            </select>
+            <input type="number" id="age" placeholder="enter your age">
+            <select name="education" id="education">
+                <option value="matric">Matric</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="graduation">Graduation</option>
+                <option value="master">Master</option>
+            </select>
+
+            <input type="number" id="height" placeholder="enter your height">
+
+            <button>check</button>
+
+
+
+
+
+
+        </form>
+
+        <h1 id="result"></h1>
+
+
+
+        <script>
+            function armyform() {
+                let country = document.getElementById("country").value
+                let education = document.getElementById("education").value
+                let height = document.getElementById("height").value
+                let age = document.getElementById("age").value
+                let result = document.getElementById("result")
+
+
+                if (country === "pakistan" && height >= 5 && age >= 18 && age <= 25 && education === "graduation" || age >= 26 && age <= 28 && education === "master"
+                ) {
+                    result.innerHTML = "you are eligible"
+
+                }
+
+                else {
+
+                    result.innerHTML = "you ar not eligible"
+                }
+
+
+            }
+        </script>
+
+
+
+
+
+
+    </body>
+
+    </html>
+</body>
+
+</html>
